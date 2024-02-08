@@ -151,7 +151,7 @@ span{
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(images/remodel.jpg);
-  background-size: cover;
+  background-size:cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
@@ -588,6 +588,12 @@ input[type="submit"]:active {
   }
   
   @media (max-width: 500px) {
+	header {
+		width:100%;
+	}
+	#velasquez{
+		font-size:55px;
+	}
 	.album .img {
 	  max-width: 94%;
 	  margin: 0 0 25px 0;
