@@ -589,7 +589,8 @@ input[type="submit"]:active {
   
   @media (max-width: 500px) {
 	header {
-		width:100%;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(85, 85, 85, 0.5)),
+    	url(images/remodel-mobile.png); 
 	}
 	#velasquez{
 		font-size:55px;
