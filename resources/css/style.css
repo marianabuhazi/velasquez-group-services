@@ -9,7 +9,7 @@
 }
 
 :root {
-  --clr-1: #28bf80;
+  --clr-1: #FFF50C;
 }
 
 html {
@@ -20,8 +20,8 @@ html,
 body {
   background-color: black;
   color: #fff;
-  font-family: 'Prompt', sans-serif;
-  font-weight: 400;
+  font-family: "Titillium Web";
+  font-weight: 700;
   font-size: 20px;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -57,7 +57,7 @@ a:link,
 a:visited {
   color: var(--clr-1);
   text-decoration: none;
-  border-bottom: 1px solid var(--clr-1);
+  border-bottom: 4px solid var(--clr-1);
   padding-bottom: 1px;
   transition: border-bottom 0.2s, color 0.2s;
   -webkit-transition: border-bottom 0.2s, color 0.2s;
@@ -78,47 +78,43 @@ a:active {
 
 h1,
 h2, h3 {
-  font-family: "Single Day", cursive;
-  font-weight: 400;
+  font-family: "Titillium Web";
   text-transform: uppercase;
 }
 
 h1 {
-  -webkit-text-stroke: 2px black; /* width and color */
   margin-top: 0;
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 3rem;
   word-spacing: 4px;
   letter-spacing: 1px;
   text-decoration: none;
-  border-bottom: 1px solid var(--clr-1);
   text-align: center;
+  font-weight: 900;
 }
 
 h2 {
-  -webkit-text-stroke: 1.5px black; /* width and color */
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   letter-spacing: 1px;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 h2:after {
   display: block;
   height: 2px;
-  background-color: var(--clr-1);
   content: " ";
   width: 100px;
   margin: 30px auto 0 auto;
+  font-weight: 700;
 }
 
 h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   text-align: center;
+  font-weight: 600;
+  color:#FFF50C;
 }
 
 /* paragraph styles */
@@ -145,7 +141,7 @@ span{
   display: block;
   margin:auto;
   font-size: 3rem;
-  color: var(--clr-1);
+  color:#FFF50C;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -154,18 +150,26 @@ span{
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/interior.jpg);
+    url(images/remodel.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
 }
 
+#velasquez{
+	font-size:90px;
+}
+
 .hero-text-box {
+  color:#FFF50C;
+  padding:1rem;
+  background-color:black;
+  font-size:30px;
   position: absolute;
-  width: 900px;
   top: 50%;
   left: 50%;
+  line-height: 3.5rem;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -173,6 +177,10 @@ header {
   -o-transform: translate(-50%, -50%);
 }
 
+#main-center{
+  display:block;
+  margin-top:35%;
+}
 .logo {
   color: white;
   font-size: 170%;
@@ -207,6 +215,7 @@ header {
   font-weight:200;
   display: inline-block;
   margin-left: 40px;
+  font-weight: 500;
 }
 
 .main-nav li a:link,
@@ -226,7 +235,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-  border-bottom: 2px solid var(--clr-1);
+  border-bottom: 4px solid var(--clr-1);
 }
 
 /* Mobile navi */
@@ -330,7 +339,7 @@ input[type="submit"]:active {
 /* ------------------------------------------------------------------------- */
 
 .section-about-us .long-copy {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 
@@ -340,7 +349,7 @@ input[type="submit"]:active {
 
 .section-gallery {
   background-color: white;
-  color: var(--clr-1);
+  color: black;
 }
 
 .plan-box {
@@ -420,8 +429,8 @@ input[type="submit"]:active {
 	left: calc(50% - 14px);
 	width: 0;
 	height: 30px;
-	border: 2px solid;
-	border-radius: 2px;
+	border: 4px solid;
+	border-radius: 4px;
 	animation: jumpInfinite 1.5s infinite;
   }
   
@@ -432,8 +441,8 @@ input[type="submit"]:active {
 	left: -10px;
 	width: 16px;
 	height: 16px;
-	border-bottom: 4px solid;
-	border-right: 4px solid;
+	border-bottom: 6px solid;
+	border-right: 6px solid;
 	border-radius: 4px;
 	transform: rotateZ(45deg);
   }
@@ -450,25 +459,31 @@ input[type="submit"]:active {
   }
 
 .about-us-container{
-	margin:4rem 0;
+	color:black;
+	background-color: white;
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
 	width:100%;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	padding:2rem;
 }
 
 .about-us-contact{
+	font-size:1.5rem;
 	text-align: center;
 }
 
-.about-us-subcontainer{
-	width:100%;
+.about-us-column{
 	display:flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	margin-bottom:2rem;
+}
+
+.about-us-subcontainer{
+	display:flex;
+	padding:0;
 }
 
 .album .responsive-container-block {
@@ -595,26 +610,11 @@ input[type="submit"]:active {
   }
 
   #about-us-par{
-	font-size:0.95rem;
+	font-size:1rem;
 	display: block;
 	margin:auto;
 	width:60%;
-	padding:2rem;
-	padding-bottom:6rem;
-  }
-
-  @media screen and (max-width: 1024px) {
-	#about-us-par{
-		width:100%;
-		font-size:0.9rem;
-	}
-  }
-
-  @media screen and (max-width: 600px) {
-	header{
-		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    	url(images/interior-mobile.jpg);
-	}
+	padding-bottom:1rem;
   }
 
   
